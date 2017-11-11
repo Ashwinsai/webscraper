@@ -10,7 +10,7 @@ import org.jsoup.select.Elements;
 public class TwitterScraper {
 
 	public static void main(String[] args) throws IOException {
-		Document doc = Jsoup.connect("https://twitter.com/search?q=supreet&src=typd").timeout(6000).get();
+		Document doc = Jsoup.connect("https://twitter.com/search?q=cfc&src=typd").timeout(6000).get();
 
 		Elements el = doc.select("div#timeline");
 
